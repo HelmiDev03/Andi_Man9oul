@@ -1,0 +1,176 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+a{
+    text-decoration: none;
+    color: #0b243e;
+    font-weight: bold;
+}  
+.louta{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    
+    
+}
+   
+  .container {
+    height: 93%;
+    font-family: 'Notable', sans-serif;
+    letter-spacing: 2px;
+  }
+  .container .inner-section {
+    min-height: 470px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .container .inner-section .quote-container {
+    width: 670px;
+    height: 470px;
+    background: #79b9ff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: none;
+    -webkit-box-shadow: 1px 37px 34px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 37px 34px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 37px 34px -13px rgba(0, 0, 0, 0.75);
+  }
+  .container .inner-section .quote-container .photo-wrapper {
+    position: absolute;
+    width: 25%;
+    z-index: 1;
+    overflow: hidden;
+    left: 0;
+    height: 470px;
+  }
+  .container .inner-section .quote-container .photo-wrapper .photo-overlay {
+    background: #000;
+    z-index: 85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    text-align: center;
+  }
+  .container .inner-section .quote-container .photo-wrapper .photo-overlay .quote {
+    color: #FFF;
+    font-size: 50px;
+    margin-top: 30px;
+    opacity: .3;
+  }
+  .container .inner-section .quote-container .photo-wrapper img {
+    height: 470px;
+    margin-left: -75px;
+  }
+  .container .inner-section .quote-container .photo-wrapper .nav-btns {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    z-index: 9999;
+  }
+  .container .inner-section .quote-container .photo-wrapper .nav-btns #move-left,
+  .container .inner-section .quote-container .photo-wrapper .nav-btns #move-right {
+    float: left;
+    width: 60px;
+  }
+  .container .inner-section .quote-container .photo-wrapper .nav-btns #move-left > span,
+  .container .inner-section .quote-container .photo-wrapper .nav-btns #move-right > span {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .container .inner-section .quote-container .photo-wrapper .nav-btns #move-left > span:hover,
+  .container .inner-section .quote-container .photo-wrapper .nav-btns #move-right > span:hover {
+    color: #179ffe;
+  }
+  .container .inner-section .quote-container .photo-wrapper .nav-btns :after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .container .inner-section .quote-container .details-wrapper {
+    width: 70%;
+    z-index: 1000;
+    height: 100%;
+    padding-right: 30px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    color: #FFF;
+    min-height: 470px;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-header .like-wrapper {
+    background: #212121;
+    border-radius: 15px;
+    width: auto;
+    padding: 6px 10px 7px 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-header .like-wrapper .heart {
+    display: inline-block;
+    font-size: 16px;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-header .like-wrapper .heart:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-header .like-wrapper .liked {
+    color: red;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-header .like-wrapper #quote-likes {
+    display: inline-block;
+    padding-left: 7px;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-header :hover {
+    background: #ff3d3d;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-text {
+    margin: 40px 25px 10px 35px;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 49px;
+  }
+  .container .inner-section .quote-container .details-wrapper #quote-footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 25px 10px 35px;
+  }
+  .container .inner-section .quote-container :after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+   
+  @media (max-width: 630px) {
+    .container .inner-section .quote-container .details-wrapper #quote-text {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .container .inner-section .quote-container .details-wrapper #quote-header .like-wrapper {
+      bottom: 40px;
+      right: 20px;
+   
+    }
+  }
